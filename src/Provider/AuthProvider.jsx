@@ -34,7 +34,7 @@ const AuthProvider = ({ children }) => {
       if (currentUser?.email) {
         const user = { email: currentUser.email };
         axios
-          .post("http://localhost:5000/jwt", user, {
+          .post("https://task-goals-server.onrender.com/jwt", user, {
             withCredentials: true,
           })
           .then((data) => console.log(data.data));
@@ -42,7 +42,7 @@ const AuthProvider = ({ children }) => {
       } else {
         axios
           .post(
-            "http://localhost:5000/logout",
+            "https://task-goals-server.onrender.com/logout",
             {},
             {
               withCredentials: true,
