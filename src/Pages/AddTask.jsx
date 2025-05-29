@@ -41,8 +41,9 @@ const AddTask = () => {
     try {
       setLoading(true);
       const res = await axiosPublic.post("/tasks", newTask);
+      console.log(res);
 
-      if (res.data.insertedId) {
+      if (res.data) {
         toast.success("Task Added Successfully");
         setTitle("");
         setDescription("");
