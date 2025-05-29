@@ -2,11 +2,11 @@
 
 ## 🚀 Live Demo
 
-[Live Site Link](https://task-management-4a8c7.web.app)
+[Live Site Link](https://task-goals-client-nfzz.vercel.app)
 
 ## 📌 Description
 
-A modern **Task Management Application** where users can **add, edit, delete, and reorder tasks** using a **drag-and-drop** interface. Tasks are categorized into **To-Do, In Progress, and Done**. The app ensures **real-time updates** with a clean and responsive UI.
+A modern **Task Management Application** where users can **add, edit, delete, and reorder tasks and goals** using a **drag-and-drop** interface. Tasks are categorized into **To-Do, In Progress, and Done**. The app ensures **real-time updates** with a clean and responsive UI.
 
 ## ✨ Features
 
@@ -58,7 +58,7 @@ A modern **Task Management Application** where users can **add, edit, delete, an
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/walid-3105/task-management-app.git
+git clone https://github.com/Walid-3105/task-goals-client.git
 ```
 
 ### 2️⃣ Setup the backend
@@ -90,6 +90,7 @@ npm run dev
 
 This project is **open-source** and available under the [MIT License](LICENSE).
 
+Backend: https://github.com/Walid-3105/task-goals-server
 ---
 
 **👨‍💻 Developed By:** [Syed Abdullah Al Walid](https://github.com/walid-3105)
