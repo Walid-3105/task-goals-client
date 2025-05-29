@@ -1,4 +1,5 @@
 import { ShinyButton } from "@/components/magicui/shiny-button";
+import MotivationalQuote from "@/components/MotivationalQuote";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -7,8 +8,9 @@ const Banner = () => {
 
   return (
     <div className="relative w-full bg-gradient-to-t from-blue-900 to-gray-900 h-full">
-      <div className="flex -mt-[74px] flex-col justify-center items-center h-screen text-center relative z-10 space-y-3">
-        <h3 className="text-5xl font-extrabold text-white drop-shadow-lg">
+      <div className="flex -mt-[5px] flex-col justify-center items-center h-screen text-center relative z-10 space-y-3">
+        <MotivationalQuote />
+        <h3 className="text-5xl font-extrabold text-white drop-shadow-lg pt-6">
           Task Management System
         </h3>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl">
