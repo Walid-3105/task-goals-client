@@ -21,7 +21,11 @@ export default function GoalList() {
   });
 
   const deleteGoal = async (id) => {
+<<<<<<< HEAD
     await axiosPublic.delete(`/goals/${id}`);
+=======
+    await axios.delete(`https://task-goals-server.onrender.com/goals/${id}`);
+>>>>>>> de7951961305385c99bea523c0064c8bcd997740
     refetch();
   };
 

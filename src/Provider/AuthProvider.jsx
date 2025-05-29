@@ -33,6 +33,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
       if (currentUser?.email) {
         const user = { email: currentUser.email };
+<<<<<<< HEAD
         axios.post("https://task-goals-server.onrender.com/jwt", user, {
           withCredentials: true,
         });
@@ -47,6 +48,24 @@ const AuthProvider = ({ children }) => {
           }
         );
         // .then((res) => console.log("logOut token", res.data));
+=======
+        axios
+          .post("https://task-goals-server.onrender.com/jwt", user, {
+            withCredentials: true,
+          })
+          .then((data) => console.log(data.data));
+        setLoading(false);
+      } else {
+        axios
+          .post(
+            "https://task-goals-server.onrender.com/logout",
+            {},
+            {
+              withCredentials: true,
+            }
+          )
+          .then((res) => console.log("logOut token", res.data));
+>>>>>>> de7951961305385c99bea523c0064c8bcd997740
         setLoading(false);
       }
     });
