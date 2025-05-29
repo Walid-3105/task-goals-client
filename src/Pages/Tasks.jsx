@@ -58,14 +58,14 @@ const Tasks = () => {
         <div className="text-center text-white text-lg">Loading tasks...</div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 mx-auto">
             <div className="bg-gray-200 text-gray-500 shadow-xl h-[180px] w-[268px] rounded-xl p-4 flex flex-col gap-2 font-medium justify-center">
               <img className="w-[46px]" src={frame1} alt="" />
               <h3>Expired Tasks</h3>
               <p>{tasks.filter((task) => task.type === "timeout").length}</p>
             </div>
 
-            <div className="bg-gray-200 text-gray-500 shadow-xl h-[180px] w-[268px] rounded-xl p-4 flex flex-col gap-2 font-medium justify-center">
+            <div className="bg-gray-200 text-gray-500 shadow-xl h-[180px] w-[268px] rounded-xl p-4 flex flex-col gap-2 font-medium justify-center ">
               <img className="w-[46px]" src={frame2} alt="" />
               <h3>All Active Tasks</h3>
               <p>{tasks.filter((task) => task.type === "active").length}</p>
