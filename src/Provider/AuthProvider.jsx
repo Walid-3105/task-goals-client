@@ -33,22 +33,20 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
       if (currentUser?.email) {
         const user = { email: currentUser.email };
-        axios
-          .post("http://localhost:5000/jwt", user, {
-            withCredentials: true,
-          })
-          .then((data) => console.log(data.data));
+        axios.post("https://task-goals-server.onrender.com/jwt", user, {
+          withCredentials: true,
+        });
+        // .then((data) => console.log(data.data));
         setLoading(false);
       } else {
-        axios
-          .post(
-            "http://localhost:5000/logout",
-            {},
-            {
-              withCredentials: true,
-            }
-          )
-          .then((res) => console.log("logOut token", res.data));
+        axios.post(
+          "https://task-goals-server.onrender.com/logout",
+          {},
+          {
+            withCredentials: true,
+          }
+        );
+        // .then((res) => console.log("logOut token", res.data));
         setLoading(false);
       }
     });

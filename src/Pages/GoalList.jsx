@@ -21,7 +21,7 @@ export default function GoalList() {
   });
 
   const deleteGoal = async (id) => {
-    await axios.delete(`http://localhost:5000/goals/${id}`);
+    await axiosPublic.delete(`/goals/${id}`);
     refetch();
   };
 
